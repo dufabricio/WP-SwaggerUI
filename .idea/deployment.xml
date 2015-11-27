@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData">
+    <serverData>
+      <paths name="172.16.1.116">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/sites/s4bdigital.net/wp-swagger" local="$PROJECT_DIR$/wordpress" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>

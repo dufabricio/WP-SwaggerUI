@@ -40,13 +40,13 @@ require_once( ABSPATH . 'wp-admin/includes/translation-install.php' );
 
 nocache_headers();
 
-// Support wp-config-sample.php one level up, for the develop repo.
-if ( file_exists( ABSPATH . 'wp-config-sample.php' ) )
-	$config_file = file( ABSPATH . 'wp-config-sample.php' );
-elseif ( file_exists( dirname( ABSPATH ) . '/wp-config-sample.php' ) )
-	$config_file = file( dirname( ABSPATH ) . '/wp-config-sample.php' );
+// Support wp-config.php one level up, for the develop repo.
+if ( file_exists( ABSPATH . 'wp-config.php' ) )
+	$config_file = file( ABSPATH . 'wp-config.php' );
+elseif ( file_exists( dirname( ABSPATH ) . '/wp-config.php' ) )
+	$config_file = file( dirname( ABSPATH ) . '/wp-config.php' );
 else
-	wp_die( __( 'Sorry, I need a wp-config-sample.php file to work from. Please re-upload this file from your WordPress installation.' ) );
+	wp_die( __( 'Sorry, I need a wp-config.php file to work from. Please re-upload this file from your WordPress installation.' ) );
 
 // Check if wp-config.php has been created
 if ( file_exists( ABSPATH . 'wp-config.php' ) )
@@ -139,7 +139,7 @@ switch($step) {
 </ol>
 <p>
 	<?php _e( 'We&#8217;re going to use this information to create a <code>wp-config.php</code> file.' ); ?>
-	<strong><?php _e( "If for any reason this automatic file creation doesn&#8217;t work, don&#8217;t worry. All this does is fill in the database information to a configuration file. You may also simply open <code>wp-config-sample.php</code> in a text editor, fill in your information, and save it as <code>wp-config.php</code>." ); ?></strong>
+	<strong><?php _e( "If for any reason this automatic file creation doesn&#8217;t work, don&#8217;t worry. All this does is fill in the database information to a configuration file. You may also simply open <code>wp-config.php</code> in a text editor, fill in your information, and save it as <code>wp-config.php</code>." ); ?></strong>
 	<?php _e( "Need more help? <a href='https://codex.wordpress.org/Editing_wp-config.php'>We got it</a>." ); ?>
 </p>
 <p><?php _e( "In all likelihood, these items were supplied to you by your Web Host. If you do not have this information, then you will need to contact them before you can continue. If you&#8217;re all ready&hellip;" ); ?></p>
@@ -327,10 +327,10 @@ if ( ! /iPad|iPod|iPhone/.test( navigator.userAgent ) ) {
 <?php
 	else :
 		/*
-		 * If this file doesn't exist, then we are using the wp-config-sample.php
+		 * If this file doesn't exist, then we are using the wp-config.php
 		 * file one level up, which is for the develop repo.
 		 */
-		if ( file_exists( ABSPATH . 'wp-config-sample.php' ) )
+		if ( file_exists( ABSPATH . 'wp-config.php' ) )
 			$path_to_wp_config = ABSPATH . 'wp-config.php';
 		else
 			$path_to_wp_config = dirname( ABSPATH ) . '/wp-config.php';

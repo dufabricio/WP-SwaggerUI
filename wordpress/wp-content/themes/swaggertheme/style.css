@@ -1,0 +1,9 @@
+.swagger-section #footer {
+    background-color: #89bf04;
+    padding: 14px;
+    border: 2px #a2a2a2 solid;
+}
+
+.list-apis {
+    padding: 10px;
+}
