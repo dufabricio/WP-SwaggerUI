@@ -5,7 +5,7 @@
       <paths name="172.16.1.116">
         <serverdata>
           <mappings>
-            <mapping deploy="/sites/s4bdigital.net/wp-swagger" local="$PROJECT_DIR$/wordpress" web="/" />
+            <mapping deploy="/sites/s4bdigital.net/docs" local="$PROJECT_DIR$/wordpress" web="/" />
           </mappings>
         </serverdata>
       </paths>
